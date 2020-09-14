@@ -33,6 +33,30 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(5*2,6/3,89/1),'NotATriangle','Should be NotATriangle') #Tests with equations
 
 
+
+    def testEquilateralTriangle1(self):
+        self.assertEqual(classifyTriangle(3,3,3),'Equilateral','Should be Equilateral') #Normal Test
+
+    def testEquilateralTriangle2(self):
+        self.assertEqual(classifyTriangle(5,5,5),'Equilateral','Should be Equilateral') #Tests different numbers
+
+    def testEquilateralTriangle3(self):
+        self.assertNotEqual(classifyTriangle(3,3,2),'Equilateral','Should not be Equilateral') #Tests a non equilateral triangle (2 similar sides)
+
+    def testEquilateralTriangle4(self):
+        self.assertNotEqual(classifyTriangle(3,2,3),'Equilateral','Should not be Equilateral') #Tests a non equilateral triangle (2 similar sides different positions)
+
+    def testEquilateralTriangle5(self):
+        self.assertNotEqual(classifyTriangle(2,3,3),'Equilateral','Should not be Equilateral') #Tests a non equilateral triangle (2 similar sides different positions)
+
+    def testEquilateralTriangle6(self):
+        self.assertNotEqual(classifyTriangle(5,2,3),'Equilateral','Should not be Equilateral') #Tests no similar sides
+
+    def testEquilateralTriangle7(self):
+        self.assertEqual(classifyTriangle(12,6*2,3*4),'Equilateral','Should be Equilateral') #Tests equations
+
+
+
     # def testRightTriangles1(self):
     #     self.assertEqual(classifyTriangle(3,4,5),'Right','3,4,5 is a Right triangle') #Normal Test
     #
@@ -48,8 +72,6 @@ class TestTriangles(unittest.TestCase):
     # def testRightTriangles5(self):
     #     self.assertEqual(classifyTriangle(5*17,13*17,12*17),'Right','Should be Right') #Tests with equations
 
-    # def testEquilateralTriangle1(self):
-    #
     # def testScaleneTriangle1(self):
     #
     # def testIsocelesTriangle1(self):
