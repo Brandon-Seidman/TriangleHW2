@@ -47,7 +47,7 @@ def classifyTriangle(a,b,c):
         return 'NotATriangle'
 
     # now we know that we have a valid triangle
-    if a == b and b == a:
+    if a == b and c == a and c == b:
         return 'Equilateral'
     elif ((a * 2) + (b * 2)) == (c * 2):
         return 'Right'
