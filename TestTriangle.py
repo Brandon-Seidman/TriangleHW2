@@ -74,8 +74,28 @@ class TestTriangles(unittest.TestCase):
 
 
 
-    # def testScaleneTriangle1(self):
-    #
+    def testScaleneTriangle1(self):
+        self.assertEqual(classifyTriangle(4,3,2),'Scalene','Should be Scalene')
+
+    def testScaleneTriangle2(self):
+        self.assertEqual(classifyTriangle(2,4,5),'Scalene','Should be Scalene')
+
+    def testScaleneTriangle3(self):
+        self.assertNotEqual(classifyTriangle(3,3,2),'Scalene','Should not be Scalene')
+
+    def testScaleneTriangle4(self):
+        self.assertNotEqual(classifyTriangle(3,2,3),'Scalene','Should not be Scalene')
+
+    def testScaleneTriangle5(self):
+        self.assertNotEqual(classifyTriangle(2,3,3),'Scalene','Should not be Scalene')
+
+    def testScaleneTriangle6(self):
+        self.assertNotEqual(classifyTriangle(3,3,3),'Scalene','Should not be Scalene')
+
+    def testScaleneTriangle7(self):
+        self.assertEqual(classifyTriangle(4*6,3*6,2*6),'Scalene','Should be Scalene')
+
+
     # def testIsocelesTriangle1(self):
 
 
