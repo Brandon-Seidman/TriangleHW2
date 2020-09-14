@@ -57,20 +57,22 @@ class TestTriangles(unittest.TestCase):
 
 
 
-    # def testRightTriangles1(self):
-    #     self.assertEqual(classifyTriangle(3,4,5),'Right','3,4,5 is a Right triangle') #Normal Test
-    #
-    # def testRightTriangles2(self):
-    #     self.assertEqual(classifyTriangle(4,5,3),'Right','4,5,3 is a Right triangle') #Tests different positions
-    #
-    # def testRightTriangles3(self):
-    #     self.assertNotEqual(classifyTriangle(6,4,4),'Right','6,4,4 should not be Right') #Tests a non right triangle
-    #
-    # def testRightTriangles4(self):
-    #     self.assertNotEqual(classifyTriangle(4,4,6),'Right','4,4,6 should not be Right') #Tests a non right triangle in different positions
-    #
-    # def testRightTriangles5(self):
-    #     self.assertEqual(classifyTriangle(5*17,13*17,12*17),'Right','Should be Right') #Tests with equations
+    def testRightTriangle1(self):
+        self.assertEqual(classifyTriangle(3,4,5),'Right','3,4,5 is a Right triangle') #Normal Test
+
+    def testRightTriangle2(self):
+        self.assertEqual(classifyTriangle(4,5,3),'Right','4,5,3 is a Right triangle') #Tests different positions
+
+    def testRightTriangle3(self):
+        self.assertNotEqual(classifyTriangle(6,4,4),'Right','6,4,4 should not be Right') #Tests a non right triangle
+
+    def testRightTriangle4(self):
+        self.assertNotEqual(classifyTriangle(4,4,6),'Right','4,4,6 should not be Right') #Tests a non right triangle in different positions
+
+    def testRightTriangle5(self):
+        self.assertEqual(classifyTriangle(5*7,13*7,12*7),'Right','Should be Right') #Tests with equations
+
+
 
     # def testScaleneTriangle1(self):
     #
