@@ -97,23 +97,23 @@ class TestTriangles(unittest.TestCase):
 
 
 
-    def testScaleneTriangle1(self):
-        self.assertEqual(classifyTriangle(4,4,2),'Scalene','Should be Scalene') #Normal Test
+    def testIsocelesTriangle1(self):
+        self.assertEqual(classifyTriangle(4,4,2),'Isoceles','Should be Isoceles') #Normal Test
 
-    def testScaleneTriangle2(self):
-        self.assertEqual(classifyTriangle(2,5,5),'Scalene','Should be Scalene') #Tests different positions
+    def testIsocelesTriangle2(self):
+        self.assertEqual(classifyTriangle(2,5,5),'Isoceles','Should be Isoceles') #Tests different positions
 
-    def testScaleneTriangle3(self):
-        self.assertEqual(classifyTriangle(5,2,5),'Scalene','Should be Scalene') #Tests different positions
+    def testIsocelesTriangle3(self):
+        self.assertEqual(classifyTriangle(5,2,5),'Isoceles','Should be Isoceles') #Tests different positions
 
-    def testScaleneTriangle4(self):
-        self.assertNotEqual(classifyTriangle(3,5,2),'Scalene','Should not be Scalene') #Tests none the same
+    def testIsocelesTriangle4(self):
+        self.assertNotEqual(classifyTriangle(3,5,2),'Isoceles','Should not be Isoceles') #Tests none the same
 
-    def testScaleneTriangle5(self):
-        self.assertNotEqual(classifyTriangle(2,2,2),'Scalene','Should not be Scalene') #Tests all the same
+    def testIsocelesTriangle5(self):
+        self.assertNotEqual(classifyTriangle(2,2,2),'Isoceles','Should not be Isoceles') #Tests all the same
 
-    def testScaleneTriangle6(self):
-        self.assertEqual(classifyTriangle(4*6,2*6,2*6),'Scalene','Should be Scalene') #Tests with equations
+    def testIsocelesTriangle6(self):
+        self.assertEqual(classifyTriangle(4*1,4*1,2*1),'Isoceles','Should be Isoceles') #Tests with equations
 
 
 if __name__ == '__main__':
