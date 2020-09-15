@@ -30,7 +30,7 @@ class TestTriangles(unittest.TestCase):
         self.assertNotEqual(classifyTriangle(2,3,2),'NotATriangle','Should not be NotATriangle') #Tests an actual triangle in different positions
 
     def testNotATriangle5(self):
-        self.assertEqual(classifyTriangle(5*2,6/3,89/1),'NotATriangle','Should be NotATriangle') #Tests with equations
+        self.assertEqual(classifyTriangle(10,2,89),'NotATriangle','Should be NotATriangle') #Tests with equations
 
 
 
